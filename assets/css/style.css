@@ -1,0 +1,735 @@
+/*=========================
+- Project: Shopy
+- Authore: Rafi kadir
+- Date: 09/02/2021
+- PSD to HTML convertion
+==========================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* Color CSS */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #3c4751;
+  background: #f4f6f8;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+p {
+  color: #495662;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 100px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.section-title {
+  margin-bottom: 80px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3c4751;
+  margin-bottom: 30px;
+}
+
+.section-title h2 span {
+  color: #ff5912;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* Topbar CSS Start */
+.topbar {
+  border-bottom: 1px solid #edeff1;
+  padding: 24px 0;
+  background: #fff;
+}
+
+.top-contact li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.top-contact li i {
+  color: #ff5912;
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.top-social {
+  text-align: right;
+}
+
+.top-social li {
+  display: inline-block;
+}
+
+.top-social li a i {
+  color: #3c4751;
+  font-size: 20px;
+  margin: 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-social li a i:hover {
+  color: #ff5912;
+}
+
+/* Topbar CSS End */
+/* Navbar CSS Start */
+.main-menu {
+  background: #fff;
+}
+
+.main-menu .navbar {
+  padding: 15px 0;
+}
+
+.main-menu .navbar .navbar-brand {
+  margin-right: 40px;
+}
+
+.main-menu .navbar .navbar-nav .nav-item .nav-link {
+  color: #3c4751;
+  margin: 0 40px 0 0;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 17px;
+}
+
+.main-menu .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #ff5912;
+}
+
+.main-menu .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff5912;
+}
+
+.main-menu .navbar .navbar-text {
+  position: relative;
+}
+
+.main-menu .navbar .navbar-text li {
+  display: inline-block;
+  color: #3c4751;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 20px;
+}
+
+.main-menu .navbar .navbar-text li a:hover {
+  color: #ff5912;
+}
+
+.main-menu .navbar .navbar-text li a i {
+  margin: 0 15px;
+}
+
+.main-menu .navbar .navbar-text .search-btn input {
+  height: 45px;
+  width: 250px;
+  border: 1px solid #abbecf;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+}
+
+.main-menu .navbar .navbar-text .search-btn input:focus {
+  border: 2px solid #abbecf !important;
+  outline: 0;
+}
+
+.main-menu .navbar .navbar-text .search-btn i {
+  margin: 0 15px;
+}
+
+.main-menu .navbar .navbar-text .search-btn .search-btn {
+  border: 0;
+  background: #fff;
+}
+
+.main-menu .navbar .navbar-text .search-btn .search-btn:focus {
+  outline: 0;
+}
+
+.main-menu .navbar .navbar-text .cart {
+  position: relative;
+}
+
+.main-menu .navbar .navbar-text .cart h6 {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background: #34404b;
+  color: #fff;
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.is-sticky {
+  position: fixed !important;
+  -webkit-box-shadow: 0 2px 9px 0 #e9ecef;
+          box-shadow: 0 2px 9px 0 #e9ecef;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-animation: 0.5s ease-in-out fadeInDown;
+          animation: 0.5s ease-in-out fadeInDown;
+}
+
+/* Navbar CSS End */
+/* Banner CSS Start */
+.sliderBanner1 {
+  background-image: url(../img/home-banner.png);
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.sliderBanner1::before {
+  position: absolute;
+  content: '';
+  background: #34404b;
+  opacity: .1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.single-slider {
+  position: relative;
+  z-index: 1;
+}
+
+.single-slider .banner-text {
+  padding-left: 100px;
+}
+
+.single-slider .banner-text h1 {
+  font-size: 52px;
+  color: #ff5912;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.single-slider .banner-text h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.single-slider .banner-text .bottom-price {
+  margin-top: 50px;
+}
+
+.single-slider .banner-text .bottom-price h6 {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.single-slider .banner-text .bottom-price a {
+  color: #ff5912;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.banner-slider {
+  position: relative;
+}
+
+.banner-slider .owl-dots {
+  position: absolute;
+  margin-top: 0 !important;
+  top: 44%;
+  left: 16%;
+}
+
+.banner-slider .owl-dots .owl-dot {
+  display: block;
+}
+
+.banner-slider .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 17px !important;
+  background: #fff;
+  border-radius: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.banner-slider .owl-dots .owl-dot span:hover {
+  background: #ff5912;
+}
+
+.banner-slider .owl-dots .owl-dot.active span {
+  background: #ff5912;
+  height: 35px !important;
+}
+
+.banner-slider .owl-dots .owl-dot:focus {
+  outline: 0;
+}
+
+/* Banner CSS End */
+/* New Arrival CSS Start */
+.arrival-area {
+  margin-bottom: 30px;
+}
+
+.arrival-area:hover .arrival-product {
+  display: none;
+}
+
+.arrival-area:hover .arrival-hover {
+  display: block;
+}
+
+.arrival-area .arrival-product {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.arrival-area .arrival-product img {
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: inherit !important;
+  margin: 0 auto 30px;
+}
+
+.arrival-area .arrival-product h4 {
+  margin-bottom: 15px;
+}
+
+.arrival-area .arrival-product h6 {
+  margin-bottom: 0;
+}
+
+.arrival-area .arrival-hover {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  display: none;
+}
+
+.arrival-area .arrival-hover img {
+  max-width: 60px !important;
+  margin-bottom: 40px;
+  width: inherit;
+  margin: 0 auto 30px;
+}
+
+.arrival-area .arrival-hover h4 {
+  color: #ff5912;
+  margin-bottom: 11px;
+}
+
+.arrival-area .arrival-hover h6 {
+  margin-bottom: 0;
+}
+
+.arrival-area .arrival-hover h6 span {
+  margin: 5px;
+}
+
+.arrival-area .arrival-hover ul {
+  padding: 30px 0;
+}
+
+.arrival-area .arrival-hover ul li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.arrival-area .arrival-hover ul .color-red {
+  background: #ff5912;
+}
+
+.arrival-area .arrival-hover ul .color-blk {
+  background: #3c4751;
+}
+
+.arrival-area .arrival-hover ul .color-blue {
+  background: #3ab3ff;
+}
+
+.arrival-area .arrival-hover ul .color-green {
+  background: #2fd967;
+}
+
+.arrival-area .arrival-hover .buttons {
+  padding-top: 30px;
+  border-top: 1px solid #f2f0f0;
+}
+
+.arrival-area .arrival-hover .buttons button {
+  border: 0;
+  background: #fff;
+  font-size: 22px;
+  margin: 0 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.arrival-area .arrival-hover .buttons button:hover {
+  color: #ff5912;
+}
+
+/* New Arrival CSS End */
+/* Promo CSS Start */
+.promo-section .promo-area {
+  background: #fff;
+  border: 1px solid #eaedef;
+  padding: 10px 20px;
+}
+
+.promo-section .promo-area .promo-price {
+  color: #ff5912;
+}
+
+.promo-section .promo-area p {
+  font-size: 14px;
+}
+
+.promo-section .adv-area {
+  background: #fff;
+  border: 1px solid #eaedef;
+  padding: 20px;
+  height: 100px;
+}
+
+.promo-section .adv-area h6 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ff5912;
+}
+
+/* Promo CSS End */
+/* Best Sale CSS Start */
+.sale-box {
+  background: #fff;
+  padding: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 30px;
+}
+
+.sale-box:hover {
+  -webkit-box-shadow: 0 0 25px 0 #ddd;
+          box-shadow: 0 0 25px 0 #ddd;
+  margin-top: -10px;
+}
+
+.sale-box:hover .bottom-txt .sale-btn {
+  display: inline-block !important;
+}
+
+.sale-box:hover .bottom-txt span {
+  display: none !important;
+}
+
+.sale-box img {
+  display: inline-block;
+}
+
+.sale-box .sale-text {
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.sale-box .sale-text h6 a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3c4751;
+}
+
+.sale-box .sale-text h6 a:hover {
+  color: #ff5912;
+}
+
+.sale-box .sale-text .bottom-txt {
+  display: inline-block;
+}
+
+.sale-box .sale-text .bottom-txt ul {
+  display: inline-block;
+}
+
+.sale-box .sale-text .bottom-txt ul li {
+  display: inline-block;
+}
+
+.sale-box .sale-text .bottom-txt ul li i {
+  color: #ff5912;
+}
+
+.sale-box .sale-text .bottom-txt span {
+  color: #ff5912;
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.sale-box .sale-text .bottom-txt .sale-btn {
+  color: #ff5912;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: none;
+}
+
+.sale-box .sale-text .bottom-txt .sale-btn:hover {
+  color: #3c4751;
+}
+
+/* Best Sale CSS End */
+/* Newslater Sale CSS Start */
+.news-area {
+  background: #fff;
+  padding: 30px 40px;
+}
+
+.news-area h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ff5912;
+  margin-bottom: 20px;
+}
+
+.news-area .subscribe-form {
+  position: relative;
+}
+
+.news-area .subscribe-form input {
+  height: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.news-area .subscribe-form input:focus {
+  outline: 0;
+}
+
+.news-area .subscribe-form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  padding: 0 50px;
+  border: 0;
+  background: #ff5912;
+  color: #fff;
+}
+
+/* Newslater Sale CSS End */
+/* Footer CSS Start */
+.footer {
+  background: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer p a {
+  color: #ff5912;
+  font-weight: 500;
+}
+
+.footer ul {
+  list-style-type: disc;
+}
+
+.footer ul li {
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.footer ul li a {
+  color: #3c4751;
+  font-weight: 500;
+}
+
+.footer ul li a:hover {
+  color: #ff5912;
+}
+
+.footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer CSS End */
+/*----- SHOP PAGE START -----*/
+.sidebar-category, .sidebar-size, .sidebar-brand, .sidebar-price {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-category h4, .sidebar-size h4, .sidebar-brand h4, .sidebar-price h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sidebar-category ul li, .sidebar-size ul li, .sidebar-brand ul li, .sidebar-price ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sidebar-category ul li a, .sidebar-size ul li a, .sidebar-brand ul li a, .sidebar-price ul li a {
+  color: #3c4751;
+}
+
+.sidebar-category ul li a:hover, .sidebar-size ul li a:hover, .sidebar-brand ul li a:hover, .sidebar-price ul li a:hover {
+  color: #ff5912;
+}
+
+#min-prices {
+  margin-right: 10px;
+}
+
+.sidebar-price p {
+  color: #ff5912;
+}
+
+.sidebar-price input {
+  width: 100%;
+}
+
+/*----- SHOP PAGE END -----*/
+/*----- PRODUCT PAGE START -----*/
+.signle-product {
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.signle-product .product-img {
+  margin-bottom: 30px;
+}
+
+.single-product-text {
+  max-width: 500px;
+}
+
+.single-product-text h1 {
+  color: #ff5912;
+  text-transform: uppercase;
+}
+
+.single-product-text .product-bottom-text h6 {
+  margin-bottom: 20px;
+}
+
+.single-product-text .product-bottom-text h6 span {
+  margin: 5px;
+}
+
+.single-product-text .buttons .add-cart {
+  margin-bottom: 20px;
+}
+
+.single-product-text .buttons .add-cart button {
+  background: red;
+  border: 0;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  -webkit-box-shadow: 0 1px 8px #9c8282d9;
+          box-shadow: 0 1px 8px #9c8282d9;
+}
+
+.single-product-text .buttons .add-cart input {
+  width: 100px;
+  border: 1px solid #ecc9c9;
+  height: 40px;
+  padding: 10px;
+}
+
+.single-product-text .buttons .buy-now {
+  border: 0;
+  background: #ff5912;
+  padding: 10px 25px;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px solid transparent;
+}
+
+.single-product-text .buttons .buy-now:hover {
+  background: #fff;
+  color: #ff5912;
+  border: 1px solid;
+}
+
+/*----- PRODUCT PAGE END -----*/
+/*----- CONTACT PAGE START -----*/
+.contact-area {
+  max-width: 700px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 7px 10px #ddd;
+          box-shadow: 0 7px 10px #ddd;
+  padding: 40px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/*----- CONTACR PAGE END -----*/
+/*# sourceMappingURL=style.css.map */
